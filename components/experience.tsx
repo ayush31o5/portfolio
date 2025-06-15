@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Calendar, MapPin, Building } from "lucide-react"
@@ -5,7 +6,8 @@ import { Calendar, MapPin, Building } from "lucide-react"
 export function Experience() {
   const experiences = [
     {
-      company: "The HAC",
+      company: "OncoDisha",
+      linkedin: "https://www.linkedin.com/company/oncodisha/",
       role: "Software Backend Engineering and Agentric AI and ML Intern",
       duration: "November 2024 – Present",
       location: "Remote",
@@ -14,22 +16,23 @@ export function Experience() {
         "Working as SDE and Agentric AI Intern at a startup, focusing on backend development and NLP",
         "Building APIs, optimizing backend systems, and developing AI-driven chatbots with intent recognition",
         "Implementing ML models to enhance chatbot interactions and deploying scalable agentric AI solutions",
-        "Deployment to MicroServices to the AWS kubernetes",
-        "Organizing and handling bugs and issues reported, continuously updating software to meet client needs",
+        "Deploying microservices to AWS Kubernetes clusters",
+        "Triage and resolve bugs, continuously updating software to meet client needs",
       ],
       technologies: ["Node.js", "AI/ML", "NLP", "AWS", "Kubernetes", "Microservices"],
     },
     {
-      company: "Invent for Change",
+      company: "Invent2change",
+      linkedin: "https://www.linkedin.com/company/i4c-inventions/",
       role: "Full Stack Software Developer Intern",
       duration: "May 2024 – August 2024",
       location: "Bangalore, IN",
       type: "Completed",
       description: [
-        "Developed and deployed a cross-platform web application for seamless document printing via local and network printers",
-        "Enabled users to upload files, customize print settings, and send jobs through Wi-Fi Direct or Bluetooth using dynamic QR code scanning",
-        "Integrated Razorpay for secure payments based on page count",
-        "Deployed on AWS EC2 with Nginx and Gunicorn, ensuring real-time tracking, responsive design, and multi-format support (PDF, DOCX)",
+        "Developed and deployed a cross-platform web app for seamless document printing over local & network printers",
+        "Enabled users to upload files, customize print settings, and send jobs via Wi-Fi Direct or Bluetooth using dynamic QR codes",
+        "Integrated Razorpay for secure, per-page payment processing",
+        "Deployed on AWS EC2 behind Nginx and Gunicorn, ensuring real-time job tracking, responsive UI, and multi-format support (PDF, DOCX)",
       ],
       technologies: ["Django", "AWS EC2", "Nginx", "Gunicorn", "Razorpay", "QR Codes"],
     },
@@ -43,9 +46,9 @@ export function Experience() {
         </h2>
 
         <div className="space-y-8">
-          {experiences.map((exp, index) => (
+          {experiences.map((exp, idx) => (
             <Card
-              key={index}
+              key={idx}
               className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-sm border-slate-200 dark:border-slate-700 hover:shadow-lg transition-shadow"
             >
               <CardHeader>
@@ -54,15 +57,24 @@ export function Experience() {
                     <CardTitle className="text-xl mb-2">{exp.role}</CardTitle>
                     <div className="flex items-center gap-2 text-blue-600 font-semibold mb-2">
                       <Building className="h-4 w-4" />
-                      {exp.company}
+                      <Link
+                        href={exp.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="hover:underline"
+                      >
+                        {exp.company}
+                      </Link>
                     </div>
                   </div>
-                  <div className="flex flex-col gap-2">
-                    <Badge variant={exp.type === "Current" ? "default" : "secondary"} className="w-fit">
-                      {exp.type}
-                    </Badge>
-                  </div>
+                  <Badge
+                    variant={exp.type === "Current" ? "default" : "secondary"}
+                    className="w-fit"
+                  >
+                    {exp.type}
+                  </Badge>
                 </div>
+
                 <div className="flex flex-col md:flex-row gap-4 text-sm text-slate-600 dark:text-slate-400">
                   <div className="flex items-center gap-1">
                     <Calendar className="h-4 w-4" />
@@ -74,18 +86,23 @@ export function Experience() {
                   </div>
                 </div>
               </CardHeader>
+
               <CardContent>
                 <ul className="space-y-2 mb-4">
-                  {exp.description.map((item, itemIndex) => (
-                    <li key={itemIndex} className="text-slate-600 dark:text-slate-300 flex items-start gap-2">
+                  {exp.description.map((bullet, bIdx) => (
+                    <li
+                      key={bIdx}
+                      className="text-slate-600 dark:text-slate-300 flex items-start gap-2"
+                    >
                       <span className="text-blue-600 mt-2">•</span>
-                      <span>{item}</span>
+                      <span>{bullet}</span>
                     </li>
                   ))}
                 </ul>
+
                 <div className="flex flex-wrap gap-2">
-                  {exp.technologies.map((tech, techIndex) => (
-                    <Badge key={techIndex} variant="outline" className="text-xs">
+                  {exp.technologies.map((tech, tIdx) => (
+                    <Badge key={tIdx} variant="outline" className="text-xs">
                       {tech}
                     </Badge>
                   ))}
