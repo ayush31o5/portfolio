@@ -4,7 +4,7 @@ import Link from "next/link"
 
 export function Hero() {
   return (
-    <section className="min-h-screen flex items-center justify-center px-4 py-20">
+    <section className="min-h-screen flex items-center justify-center px-6 py-30">
       <div className="max-w-4xl mx-auto text-center">
         <div className="mb-8">
           <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-r from-blue-500 to-purple-600 flex items-center justify-center text-white text-4xl font-bold">
@@ -27,7 +27,7 @@ export function Hero() {
             </Link>
           </Button>
           <Button asChild variant="outline" size="lg">
-            <Link href="/resume.pdf" target="_blank">
+            <Link href="/CV_AyushSinghai.pdf" target="_blank">
               <Download className="mr-2 h-4 w-4" />
               Download Resume
             </Link>
