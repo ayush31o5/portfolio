@@ -20,8 +20,8 @@ export function Projects() {
       ],
       technologies: ["Node.js", "Express.js", "React.js", "Vite", "MongoDB", "JWT", "Cloudinary"],
       links: {
-        demo: "https://cubicles-demo.com",
-        github: "#",
+        demo: "https://cubicles.netlify.app/",
+        github: "https://github.com/Cubicles2024/Cubicals-main",
       },
     },
     {
@@ -38,7 +38,7 @@ export function Projects() {
       ],
       technologies: ["Python", "OCR", "AI/ML", "Prompt Engineering", "Computer Vision"],
       links: {
-        github: "#",
+        github: "https://github.com/ayush31o5/ocr-text-extraction",
       },
     },
     {
