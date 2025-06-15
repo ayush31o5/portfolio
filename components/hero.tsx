@@ -37,22 +37,22 @@ export function Hero() {
         <div className="flex justify-center gap-6">
           <Button asChild variant="ghost" size="icon" className="h-12 w-12">
             <Link href="https://github.com/ayush31o5" target="_blank">
-              <Github className="h-6 w-6" />
+              <Github className="h-12 w-12" />
             </Link>
           </Button>
           <Button asChild variant="ghost" size="icon" className="h-12 w-12">
             <Link href="https://www.linkedin.com/in/ayush-singhai-72931b258/" target="_blank">
-              <Linkedin className="h-6 w-6" />
+              <Linkedin className="h-12 w-12" />
             </Link>
           </Button>
           <Button asChild variant="ghost" size="icon" className="h-12 w-12">
             <Link href="https://leetcode.com/u/Ayushsinghai" target="_blank">
-              <ExternalLink className="h-6 w-6" />
+              <ExternalLink className="h-12 w-12" />
             </Link>
           </Button>
           <Button asChild variant="ghost" size="icon" className="h-12 w-12">
             <Link href="mailto:ayushsinghai3105@gmail.com">
-              <Mail className="h-6 w-6" />
+              <Mail className="h-12 w-12" />
             </Link>
           </Button>
         </div>
