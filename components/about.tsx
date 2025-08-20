@@ -14,7 +14,7 @@ export function About() {
             <p className="text-lg text-slate-600 dark:text-slate-300 mb-6 leading-relaxed">
               I'm a passionate Computer Engineering student at IIIT Sri City with hands-on experience in full-stack
               development, backend engineering, and AI/ML. Currently working as a Backend Engineering and Agentric AI
-              Intern at The HAC, where I focus on building scalable APIs and AI-driven solutions.
+              Intern at OncoDisha, where I focus on building scalable APIs and AI-driven solutions.
             </p>
             <p className="text-lg text-slate-600 dark:text-slate-300 mb-6 leading-relaxed">
               My expertise spans across modern web technologies, cloud deployment, and machine learning. I've

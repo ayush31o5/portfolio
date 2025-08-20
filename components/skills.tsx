@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Code, Database, Wrench } from "lucide-react"
+import { Code, Database, Wrench, Brain, Cloud } from "lucide-react"
 
 export function Skills() {
   const skillCategories = [
@@ -17,12 +17,41 @@ export function Skills() {
     {
       title: "Databases & Cloud",
       icon: <Database className="h-5 w-5" />,
-      skills: ["MongoDB", "PostgreSQL", "MySQL", "Oracle SQL", "AWS", "Kubernetes"],
+      skills: ["MongoDB", "PostgreSQL", "MySQL", "Oracle SQL", "AWS (EC2, S3, EKS)", "Kubernetes", "Redis"],
     },
     {
       title: "Tools & Systems",
       icon: <Wrench className="h-5 w-5" />,
-      skills: ["Visual Studio", "PyQt", "Linux", "Windows", "UNIX", "Docker"],
+      skills: ["Docker", "Git/GitHub", "Linux/UNIX", "Windows", "Visual Studio Code", "Nginx"],
+    },
+    {
+      title: "AI/ML & GenAI",
+      icon: <Brain className="h-5 w-5" />,
+      skills: [
+        "Machine Learning",
+        "Deep Learning (CNNs, RNNs)",
+        "NLP & Chatbots",
+        "Generative AI (Prompt Engineering, RAG)",
+        "Hugging Face Transformers",
+        "LangChain",
+        "TensorFlow",
+        "PyTorch",
+        "OpenCV",
+        "OCR Pipelines",
+      ],
+    },
+    {
+      title: "DevOps & Deployment",
+      icon: <Cloud className="h-5 w-5" />,
+      skills: [
+        "CI/CD",
+        "Microservices Architecture",
+        "AWS Kubernetes (EKS)",
+        "Docker Compose",
+        "Gunicorn",
+        "NGINX",
+        "Prometheus & Grafana",
+      ],
     },
   ]
 
@@ -33,7 +62,7 @@ export function Skills() {
           Skills & Technologies
         </h2>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {skillCategories.map((category, index) => (
             <Card
               key={index}

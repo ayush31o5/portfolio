@@ -8,7 +8,7 @@ export function Projects() {
   const projects = [
     {
       title: "Job Finder Platform with Blogging Feature",
-      status: "Ongoing",
+      status: "Completed",
       description:
         "A comprehensive job finder platform developed with guidance from Dr. Himanghu Sarma and Dr. Dorsala Mallikarjun Reddy, Assistant Professors at IIIT Sri City.",
       features: [
@@ -43,7 +43,7 @@ export function Projects() {
     },
     {
       title: "3D Hand Gesture Recognition",
-      status: "Completed",
+      status: "Under Review",
       description:
         "Enhanced 3D hand gesture recognition system developed under the guidance of Prof. Dr. Piyush Joshi at IIIT Sri City.",
       features: [
@@ -76,11 +76,22 @@ export function Projects() {
               <CardHeader>
                 <div className="flex items-start justify-between gap-4">
                   <CardTitle className="text-lg leading-tight">{project.title}</CardTitle>
-                  <Badge variant={project.status === "Ongoing" ? "default" : "secondary"} className="shrink-0">
+                  <Badge
+                    variant={
+                      project.status === "Completed"
+                        ? "secondary"
+                        : project.status === "Under Review"
+                          ? "outline"
+                          : "default"
+                    }
+                    className="shrink-0"
+                  >
                     {project.status}
                   </Badge>
                 </div>
-                <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">{project.description}</p>
+                <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
+                  {project.description}
+                </p>
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
