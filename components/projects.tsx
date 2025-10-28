@@ -42,6 +42,23 @@ export function Projects() {
       },
     },
     {
+      title: "Reddit Sentiment Analysis",
+      status: "Completed",
+      description:
+        "ChatGPT said:Developed a Reddit sentiment analysis pipeline using NLP and machine learning to classify user sentiments with over 85% accuracy.",
+      features: [
+        "Automated Reddit data collection using PRAW API for large-scale discussion scraping.",
+        "Built robust text preprocessing and NLP pipelines (tokenization, lemmatization, TF–IDF).",
+        "Trained and compared ML models (Logistic Regression, Random Forest, LSTM) achieving >85% accuracy.",
+        "Conducted EDA with visualization tools to uncover sentiment and topic trends.",
+        "Packaged the workflow into reproducible Jupyter notebooks with GitHub version control.",
+      ],
+      technologies: ["Python", "PRAW", "pandas", "NumPy", "NLTK", "scikit-learn", "TensorFlow", "Keras", "matplotlib", "seaborn", "Jupyter Notebook", "GitHub"],
+      links: {
+        github: "https://github.com/ayush31o5/reddit_sentiment_analysis",
+      },
+    },
+    {
       title: "3D Hand Gesture Recognition",
       status: "Under Review",
       description:
@@ -55,9 +72,26 @@ export function Projects() {
       ],
       technologies: ["Python", "Computer Vision", "3D Modeling", "Machine Learning", "OpenCV"],
       links: {
-        github: "#",
+        github: "https://github.com/ayush31o5/3d-hand-gesture",
       },
     },
+    {
+      title: "A Comprehensiveness of Aggregation Algorithms in Federated Learning",
+      status: "Under Review",
+      description:
+        "Comprehensive research analyzing and benchmarking nine Federated Learning algorithms, proposing a modular and parallel aggregation framework for efficient distributed training.",
+      features: [
+        "Comparative study of nine FL algorithms including FedAvg, FedAvgM, FedAdam, MimeLite, and SCAFFOLD",
+        "Designed a modular, parallel simulation framework achieving up to 33% faster convergence",
+        "Implemented dynamic client selection and secure aggregation under non-IID data conditions",
+        "Achieved 86% model accuracy with superior edge-device adaptability (10/10 rating)"
+      ],
+      technologies: ["Python", "PyTorch", "TensorFlow", "NumPy", "Matplotlib", "FedML", "OpenFL", "Jupyter Notebook"],
+      links: {
+        github: "https://github.com/varunTyagarayanG/Fed-Agg",
+      },
+    },
+
   ]
 
   return (

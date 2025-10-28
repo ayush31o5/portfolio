@@ -9,9 +9,9 @@ export function Experience() {
       company: "OncoDisha",
       linkedin: "https://www.linkedin.com/company/oncodisha/",
       role: "Software Backend & AI Intern",
-      duration: "November 2024 – Present",
+      duration: "November 2024 – October 2025",
       location: "Remote",
-      type: "Current",
+      type: "Completed",
       description: [
         "Enhanced an NLP-based patient support chatbot by integrating Hugging Face Transformers with context management and prompt engineering",
         "Built scalable conversational AI microservices on AWS EKS with autoscaling, blue-green deployments, and A/B testing pipelines",
@@ -24,7 +24,7 @@ export function Experience() {
       company: "Myrix Labs",
       linkedin: "https://www.linkedin.com/company/myrixlabs/",
       role: "Software Development Engineer Intern",
-      duration: "May 2025 – July 2025",
+      duration: "August 2024 – Nov 2024",
       location: "Remote",
       type: "Completed",
       description: [
@@ -33,6 +33,20 @@ export function Experience() {
         "Optimized backend performance with query caching, reducing response times by 30%",
       ],
       technologies: ["Express.js", "Node.js", "JWT", "OAuth2", "MongoDB", "Redis"],
+    },
+    {
+      company: "Zomato",
+      linkedin: "https://www.linkedin.com/company/zomato/",
+      role: "Software Engineer Intern",
+      duration: "May 2025 – July 2025",
+      location: "Remote",
+      type: "Completed",
+      description: [
+        "Developed and maintained RESTful APIs(Express.js) powering core product features and third - party integrations.",
+        "Implemented secure authentication and authorization mechanisms using JWT and OAuth2, ensuring seamless user onboarding and data protection.",
+        "Optimized backend performance through efficient database queries and caching strategies",
+      ],
+      technologies: ["Express.js", "Node.js", "JWT", "OAuth2","React.js"],
     },
     {
       company: "Myrix Labs",
