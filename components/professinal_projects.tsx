@@ -3,8 +3,8 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Calendar, MapPin, Building } from "lucide-react"
 
-export function Experience() {
-  const experiences = [
+export function ProfessionalProjects() {
+  const professinal_projects = [
     {
       company: "OncoDisha",
       linkedin: "https://www.linkedin.com/company/oncodisha/",
@@ -101,7 +101,7 @@ export function Experience() {
         </h2>
 
         <div className="space-y-8">
-          {experiences.map((exp, idx) => (
+          {professinal_projects.map((exp, idx) => (
             <Card
               key={idx}
               className="bg-white/70 dark:bg-slate-800/70 backdrop-blur-sm border-slate-200 dark:border-slate-700 hover:shadow-lg transition-shadow"
