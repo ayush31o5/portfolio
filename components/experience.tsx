@@ -24,7 +24,7 @@ export function Experience() {
       company: "Myrix Labs",
       linkedin: "https://www.linkedin.com/company/myrixlabs/",
       role: "Software Development Engineer Intern",
-      duration: "August 2024 – Nov 2024",
+      duration: "Januray 2024 – April 2024",
       location: "Remote",
       type: "Completed",
       description: [
@@ -52,7 +52,7 @@ export function Experience() {
       company: "Myrix Labs",
       linkedin: "https://www.linkedin.com/company/myrixlabs/",
       role: "Generative AI Intern",
-      duration: "May 2024 – July 2024",
+      duration: "August 2024 – October 2024",
       location: "Remote",
       type: "Completed",
       description: [
