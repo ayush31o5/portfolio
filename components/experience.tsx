@@ -21,20 +21,6 @@ export function Experience() {
       technologies: ["Node.js", "AI/ML", "NLP", "AWS EKS", "Kubernetes", "Microservices", "OCR", "Transformers"],
     },
     {
-      company: "Myrix Labs",
-      linkedin: "https://www.linkedin.com/company/myrixlabs/",
-      role: "Software Development Engineer Intern",
-      duration: "Januray 2024 – April 2024",
-      location: "Remote",
-      type: "Completed",
-      description: [
-        "Developed RESTful APIs with Express.js for core features and integrations",
-        "Implemented secure authentication with JWT and OAuth2 for seamless onboarding",
-        "Optimized backend performance with query caching, reducing response times by 30%",
-      ],
-      technologies: ["Express.js", "Node.js", "JWT", "OAuth2", "MongoDB", "Redis"],
-    },
-    {
       company: "Zomato",
       linkedin: "https://www.linkedin.com/company/zomato/",
       role: "Software Engineer Intern",
@@ -62,20 +48,6 @@ export function Experience() {
         "Deployed on AWS EC2 behind Nginx & Gunicorn, ensuring responsive UI and real-time job tracking",
       ],
       technologies: ["Django", "AWS EC2", "Nginx", "Gunicorn", "Razorpay", "QR Codes"],
-    },
-    {
-      company: "MULTIMEME",
-      linkedin: "https://github.com/ayush31o5", // (no company LinkedIn, so using GitHub)
-      role: "AI Research Intern",
-      duration: "August 2025 – October 2025",
-      location: "Remote",
-      type: "Completed",
-      description: [
-        "Developed multimodal meme classification pipeline with OpenCV + Transformers on a 50k dataset",
-        "Boosted F1 score to 0.87 using joint CNN embeddings and vision-language models",
-        "Deployed inference microservice in Flask, achieving 50 FPS on CPU and 150 FPS on GPU",
-      ],
-      technologies: ["OpenCV", "Transformers", "CNNs", "Flask", "PyTorch", "Vision-Language Models"],
     },
   ]
 
