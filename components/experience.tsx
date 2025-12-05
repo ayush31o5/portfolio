@@ -49,20 +49,6 @@ export function Experience() {
       technologies: ["Express.js", "Node.js", "JWT", "OAuth2","React.js"],
     },
     {
-      company: "Myrix Labs",
-      linkedin: "https://www.linkedin.com/company/myrixlabs/",
-      role: "Generative AI Intern",
-      duration: "August 2024 – October 2024",
-      location: "Remote",
-      type: "Completed",
-      description: [
-        "Built and fine-tuned LLM pipelines with Hugging Face Transformers for production use cases",
-        "Implemented RAG pipelines, evaluation frameworks, and intelligent search features",
-        "Deployed scalable inference microservices with 25% latency reduction",
-      ],
-      technologies: ["LLMs", "Transformers", "RAG", "LangChain", "Python", "Docker", "AWS"],
-    },
-    {
       company: "Invent2change",
       linkedin: "https://www.linkedin.com/company/i4c-inventions/",
       role: "Full Stack Software Developer Intern",
